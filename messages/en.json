@@ -1,0 +1,24 @@
+{
+  "common": {
+    "skipToMainContent": "Skip to main content",
+    "work": "Work",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "landing": {
+    "from": "from",
+    "design": "design",
+    "to": "to",
+    "product": "product"
+  },
+  "footer": {
+    "curiosity": "Curiosity",
+    "description": "innate drive to explore, learn, and understand the world, fostering intellectual growth and innovation through inquiry and new experiences.",
+    "tag": "Embrace curiosity."
+  },
+  "contact": {
+    "contactDescription": "Here several ways you can slide into my DMs, but be aware, I might be busy playing some board games or watching a movie. I'll get back to you as soon as I can!",
+    "getInTouch": "Get in touch",
+    "followMeOnSocials": "Follow me on socials"
+  }
+}

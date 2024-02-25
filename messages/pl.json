@@ -1,0 +1,24 @@
+{
+  "common": {
+    "skipToMainContent": "Skocz do treści głównej",
+    "work": "Praca",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "landing": {
+    "from": "od",
+    "design": "designu",
+    "to": "do",
+    "product": "produktu"
+  },
+  "footer": {
+    "curiosity": "Ciekawość",
+    "description": "wrodzony pęd do eksploracji, nauki i zrozumienia świata, wspierający intelektualny rozwój i innowacje poprzez dociekania i nowe doświadczenia.",
+    "tag": "Badź ciekawy świata."
+  },
+  "contact": {
+    "contactDescription": "Oto kilka sposobów, w jaki możesz do mnie napisać prywatną wiadomość, ale pamiętaj, że mogę być zajęty graniem w gry planszowe lub oglądaniem filmu. Odpowiem Ci tak szybko, jak tylko będę mógł!",
+    "getInTouch": "Zostańmy w kontakcie",
+    "followMeOnSocials": "Śledź mnie na social mediach"
+  }
+}
