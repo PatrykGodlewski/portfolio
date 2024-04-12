@@ -3,13 +3,6 @@ import Experience from "@/components/composite/experience";
 import { Project, Work } from "@/components/composite/experience/types";
 import Landing from "@/components/composite/landing";
 import { useTranslations } from "next-intl";
-import dynamic from "next/dynamic";
-
-type Props = {
-  params: {
-    locale: string;
-  };
-};
 
 const workExp: Work[] = [
   {
@@ -49,21 +42,10 @@ const projects: Project[] = [
   },
 ];
 
-const SphereScene = dynamic(
-  () => import("@/components/composite/sphere-scene"),
-  {
-    loading: () => <p>Loading...</p>,
-    ssr: false,
-  }
-);
-
 export default function Home() {
   const t = useTranslations("common");
   return (
     <main id="content">
-      <div className="absolute z-40 top-0 left-0 w-full h-screen">
-        <SphereScene />
-      </div>
       <Landing />
       <div className="space-y-60">
         <Experience.Root>

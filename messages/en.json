@@ -20,5 +20,20 @@
     "contactDescription": "Here several ways you can slide into my DMs, but be aware, I might be busy playing some board games or watching a movie. I'll get back to you as soon as I can!",
     "getInTouch": "Get in touch",
     "followMeOnSocials": "Follow me on socials"
+  },
+  "commandSearch": {
+    "work": "Portal to Work section",
+    "projects": "Portal to Projects section",
+    "contact": "Portal to Contact section",
+    "themeSwitch": "Switch theme to",
+    "languageSwitch": "Switch language to",
+    "polish": "Polish",
+    "english": "English",
+    "dark": "Dark",
+    "light": "Light",
+    "search": "Search",
+    "webPageNavigation": "Web page navigation",
+    "webPageFunctions": "Web page functions",
+    "noItemsFound": "No items found"
   }
 }

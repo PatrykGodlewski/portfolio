@@ -12,7 +12,11 @@ function Title({ children, id, className, ...restProps }: Props) {
   return (
     <h1
       {...restProps}
-      className={cn("text-[96px] font-bold", className, font.className)}
+      className={cn(
+        "text-[78px] leading-[78px] md:leading-[96px] md:text-[96px] font-bold",
+        className,
+        font.className
+      )}
       id={id ?? children?.toString().toLocaleLowerCase()}
     >
       {children}

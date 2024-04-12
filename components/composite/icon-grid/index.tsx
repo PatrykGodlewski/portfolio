@@ -1,12 +1,15 @@
-import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import Github from "@/components/svg/github";
+import LinkedIn from "@/components/svg/linkedin";
+import Twitter from "@/components/svg/twitter";
+import { Mail } from "lucide-react";
 import { Fragment } from "react";
 import FancyIcon from "./fancy-icon";
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {}
 function IconGrid({ children, ...restProps }: Props) {
   const grid = [
-    [null, null, Instagram],
-    [null, Linkedin, "empty"],
+    [null, null, Twitter],
+    [null, LinkedIn, "empty"],
     [Github, "empty", Mail],
   ];
   return (
@@ -35,7 +38,7 @@ function IconRow({ children }: React.PropsWithChildren) {
 }
 function IconItem({ children }: React.PropsWithChildren) {
   return (
-    <div className="bg-[#040404] rounded-[58px] p-[52px] flex items-center justify-center">
+    <div className="bg-[#040404] dark:bg-[#f4f4f4] rounded-[58px] p-[52px] flex items-center justify-center">
       {children}
     </div>
   );

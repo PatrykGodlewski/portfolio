@@ -55,21 +55,21 @@ export function Root({ children }: RootProps) {
   const [currentId, setCurrentId] = useState<Context["currentId"]>(null);
   return (
     <Context.Provider value={{ currentId, setCurrentId }}>
-      <section className="max-w-5xl mx-auto space-y-8">{children}</section>
+      <section className="max-w-5xl mx-auto px-4 space-y-8">{children}</section>
     </Context.Provider>
   );
 }
 
 export function Heading({ children, filePath, id }: TitleProps) {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex flex-col sm:flex-row gap-y-4 justify-between items-center">
       <Title id={id}>{children}</Title>
       {filePath && (
         <NextLink
           href={filePath ?? "#"}
           target="_blank"
           rel="noreferrer noopener"
-          className="rounded-full flex gap-4 items-center bg-middleground p-[6px] pr-6"
+          className="rounded-full flex gap-5 items-center bg-middleground p-[6px] pr-6"
         >
           <div className="bg-background rounded-full p-3">
             <Download />
@@ -94,7 +94,7 @@ export function Work({
   const id = useId();
   const ref = useRef<HTMLDivElement>(null);
 
-  const isInView = useInView(ref, { margin: "0px 0px -400px 0px", once: true });
+  const isInView = useInView(ref, { margin: "0% 0% -50% 0%", once: true });
 
   const open = () => {
     setCurrentId(id);
@@ -116,22 +116,24 @@ export function Work({
       tabIndex={0}
       className="bg-middleground p-14 px-18 rounded-[100px]"
     >
-      <div className="flex flex-wrap">
-        <div className="basis-1/4 flex items-center">
-          <div className="text-xl text-stone-400 font-medium ">
+      <div className="sm:flex flex-wrap">
+        <div className="sm:basis-1/4 sm:flex sm:items-center">
+          <div className="text-xl text-stone-400 font-medium">
             <span>{from.toUpperCase()}</span> - <span>{to.toUpperCase()}</span>
           </div>
         </div>
-        <div className="basis-3/4">
-          <div className="flex items-center gap-8">
-            <h2 className="text-4xl font-bold whitespace-nowrap">{position}</h2>
+        <div className="sm:basis-3/4">
+          <div className="sm:flex sm:items-center space-y-4 sm:space-y-0 gap-8">
+            <h2 className="text-4xl font-bold sm:whitespace-nowrap">
+              {position}
+            </h2>
             <div className="h-px bg-foreground rounded-full w-full" />
             <h3 className="text-xl whitespace-nowrap">{company}</h3>
           </div>
         </div>
 
-        <div className="basis-1/4" />
-        <div className="basis-3/4">
+        <div className="sm:basis-1/4" />
+        <div className="sm:basis-3/4">
           <motion.div
             initial="closed"
             animate={isOpen ? "open" : "closed"}
@@ -143,7 +145,7 @@ export function Work({
               <p className="pt-7 text-xl text-stone-400 font-semibold">
                 {description}
               </p>
-              <ul className="flex gap-2">
+              <ul className="flex flex-wrap gap-2">
                 {technologies.map((tech) => (
                   <li key={tech}>
                     <Badge>{tech}</Badge>
@@ -212,7 +214,7 @@ export function Project({
         </div>
 
         <div className="basis-1/5" />
-        <div className="basis-4/5 ">
+        <div className="sm:basis-4/5">
           <motion.div
             initial="closed"
             animate={isOpen ? "open" : "closed"}
@@ -221,10 +223,10 @@ export function Project({
             className="-m-1 p-1 overflow-hidden"
           >
             <div className="space-y-7 pb-8">
-              <p className="pt-7 text-xl text-stone-400 font-semibold pr-8">
+              <p className="pt-7 text-xl text-stone-400 font-semibold sm:pr-8">
                 {description}
               </p>
-              <ul className="flex gap-2">
+              <ul className="flex flex-wrap gap-2">
                 {technologies.map((tech) => (
                   <li key={tech}>
                     <Badge>{tech}</Badge>

@@ -22,7 +22,7 @@ function Footer() {
           </div>
         </div>
         <div className="container mx-auto">
-          <div className="py-20 flex justify-between">
+          <div className="py-20 flex flex-col md:flex-row gap-8 justify-between">
             <div className="space-y-10">
               <Logo />
               <ul className="space-y-6">
@@ -37,7 +37,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between gap-4">
               <div>
                 <h1 className={cn("text-6xl", font.className)}>
                   {tFotter("curiosity")}

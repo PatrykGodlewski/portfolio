@@ -20,5 +20,20 @@
     "contactDescription": "Oto kilka sposobów, w jaki możesz do mnie napisać prywatną wiadomość, ale pamiętaj, że mogę być zajęty graniem w gry planszowe lub oglądaniem filmu. Odpowiem Ci tak szybko, jak tylko będę mógł!",
     "getInTouch": "Zostańmy w kontakcie",
     "followMeOnSocials": "Śledź mnie na social mediach"
+  },
+  "commandSearch": {
+    "work": "Przejdz do sekcji Praca",
+    "projects": "Przejdz do sekcji Projekty",
+    "contact": "Przejdz do sekcji Kontakt",
+    "themeSwitch": "Przełącz motyw strony",
+    "languageSwitch": "Zmień język strony na",
+    "polish": "Polski",
+    "english": "Angielski",
+    "dark": "Ciemny",
+    "light": "Jasny",
+    "search": "Szukaj",
+    "webPageNavigation": "Nawigacja po stronie",
+    "webPageFunctions": "Funkcje strony",
+    "noItemsFound": "Nie znaleziono elementów pasujących do wyszukiwania"
   }
 }

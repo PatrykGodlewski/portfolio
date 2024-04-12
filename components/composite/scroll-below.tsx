@@ -29,7 +29,7 @@ const ScrollBelow = () => {
         }}
         animate={{ y: [-200, 0], x: ["-50%"] }}
         className="absolute w-full h-full left-1/2 bg-gradient-to-b from-transparent via-accent to-transparent"
-      ></motion.div>
+      />
     </div>
   );
 };

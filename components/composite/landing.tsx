@@ -11,7 +11,7 @@ const font = Philosopher({
 function Landing() {
   const t = useTranslations("landing");
   return (
-    <section className="relative w-full flex flex-col h-screen pt-[var(--navbar-height)] px-4">
+    <section className="relative w-full flex flex-col h-svh pt-[var(--navbar-height)] px-4">
       <div className="flex items-center h-full justify-center">
         <div
           className={cn(

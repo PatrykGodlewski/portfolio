@@ -7,8 +7,8 @@ function FancyIcon({ children, empty }: React.PropsWithChildren<Props>) {
   return empty ? (
     <div className="w-[153px] h-[153px]" />
   ) : (
-    <div className="bg-gradient-to-b w-[153px] h-[153px] rounded-2xl p-1 from-[#333333] to-[#111111">
-      <div className="bg-[#111111] rounded-2xl h-full flex items-center justify-center fill-accent text-accent">
+    <div className="bg-gradient-to-b w-[153px] h-[153px] rounded-2xl p-1 from-[#333333] to-[#111111] dark:from-[#e7e7e7] dark:to-[#f9f9f9]">
+      <div className="bg-[#111111] dark:bg-[#f9f9f9] rounded-2xl h-full flex items-center justify-center fill-accent text-accent">
         {Children.map(children, (child: React.ReactNode) =>
           isValidElement(child)
             ? cloneElement(child as React.ReactElement, {
