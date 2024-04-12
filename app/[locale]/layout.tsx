@@ -10,7 +10,7 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import Providers from "../providers";
 
-export const fontSans = Inter({
+const fontSans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -32,6 +32,8 @@ type Props = Readonly<{
 export function generateStaticParams() {
   return LOCALES_LIST.map((locale) => ({ locale }));
 }
+
+export const dynamic = "force-dynamic";
 
 export default function RootLayout({ children, params: { locale } }: Props) {
   unstable_setRequestLocale(locale);

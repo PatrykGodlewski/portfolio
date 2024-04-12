@@ -68,6 +68,7 @@ export function CommandSearch({
   const teleportTo = (id: string) => {
     router.push(`#${id}`, {
       scroll: true,
+      // @ts-ignore
       padStart: 200,
     });
     close();
