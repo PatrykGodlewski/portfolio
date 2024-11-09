@@ -7,8 +7,18 @@ import { useLocale, useTranslations } from "next-intl";
 
 const workExp_EN: Work[] = [
   {
-    from: "2022",
+    from: "2024",
     to: "present",
+    position: "Software Engineer",
+    company: "NFQ",
+    description:
+      "As a Software Engineer, I work with NextJS framework, ensuring high-quality deliverables within timelines and budget. I optimized codebase performance, conducted automated testing, and built web apps with React and Typescript, focusing on responsive, accessible UIs and security.",
+    technologies: ["React", "Next.js", "TypeScript"],
+    workProjects: [],
+  },
+  {
+    from: "2022",
+    to: "2024",
     position: "Frontend Developer",
     company: "GrupaIT",
     description:
@@ -35,8 +45,18 @@ const workExp_EN: Work[] = [
 
 const workExp_PL: Work[] = [
   {
-    from: "2022",
+    from: "2024",
     to: "obecnie",
+    position: "Software Engineer",
+    company: "NFQ",
+    description:
+      "Jako Software Engineer pracuję z frameworkiem NextJS, dbając o dostarczanie wysokiej jakości rozwiązań w ustalonych terminach i budżecie. Optymalizuję wydajność kodu, przeprowadzam testy automatyczne i buduję aplikacje webowe w React i TypeScript, koncentrując się na responsywnych, dostępnych interfejsach użytkownika i bezpieczeństwie.",
+    technologies: ["React", "Next.js", "TypeScript"],
+    workProjects: [],
+  },
+  {
+    from: "2022",
+    to: "2024",
     position: "Frontend Developer",
     company: "GrupaIT",
     description:
